@@ -4,9 +4,9 @@ from keep_alive import keep_alive
 keep_alive()
 
 
-TOKEN = '6921639698:AAGgvNBVhXqAaXQxpyAA6NL03zoIcG8yxY4'
+# TOKEN = '6921639698:AAGgvNBVhXqAaXQxpyAA6NL03zoIcG8yxY4'
 
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(token = os.environ.get("token"))
 
 # تعریف دستور /start
 @bot.message_handler(commands=['start'])
