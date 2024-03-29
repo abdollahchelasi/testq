@@ -1,6 +1,6 @@
 import telebot
 from keep_alive import keep_alive
-
+import os
 keep_alive()
 
 
